@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+// import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import Icon from '@material-ui/core/Icon';
 import a2b from '../src/img/a2b100.png';
 
@@ -56,7 +56,7 @@ handleSubmit(event){
         
         };
         console.log(user);
-  axios.post('http://192.168.10.201/a2b_api/public/register',user,{
+  axios.post('http://Spaveline.com/a2b/register',user,{
 })
 //   .catch((error) => alert("User Already exists"))
 //   .catch((message)=>alert("Successfully Registered"))

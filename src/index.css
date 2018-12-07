@@ -9,7 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background-color:rgba(55,76,199,0.9); */
   /* background-color:#2196F3; */
-  background: linear-gradient(rgba(33,150,243,1), rgba(55,76,199,0.7)), url('../src/img/bg.jpg');
+  /* background: linear-gradient(rgba(33,150,243,1), rgba(55,76,199,0.7)), url('../src/img/bg.jpg'); -----------------*/ 
   /* background: url('../src/img/a2b.jpg') ; */
   background-attachment: fixed;
   background-position: center;
@@ -21,5 +21,56 @@ code {
     monospace;
 }
 
+
+#stripes, #stripes span {
+  position: absolute;
+}
+
+#stripes span {
+    height: 190px;
+}
+
+#stripes {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: skewY(-12deg);
+  transform-origin: 0;
+  background: linear-gradient(150deg,#374cc7 15%,#2b5794 70%,#8c77be 94%);
+}
+
+#stripes :nth-child(1) {
+  width: 33.33333%;
+  left: -16.66666%;
+  background: #ff767622;
+}
+
+#stripes :nth-child(2) {
+  width: 33.33333%;
+  top: 0;
+  left: 16.66666%;
+  right: auto;
+  background: #30ced845;
+}
+
+#stripes :nth-child(3) {
+  width: 33.33333%;
+  left: 49.99999%;
+  bottom: auto;
+  background: #30ced8;
+}
+
+#stripes :nth-child(4) {
+  width: 33.33333%;
+  top: 380px;
+  right: -16.66666%;
+  background: #8c77be45;
+}
+
+#stripes :nth-child(5) {
+  width: 33.33333%;
+  bottom: 0;
+  background: #1fa2ff33;
+} 
 
 

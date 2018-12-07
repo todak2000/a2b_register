@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+// import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import Icon from '@material-ui/core/Icon';
 import a2b from '../src/img/a2b100.png';
 
@@ -20,6 +20,8 @@ class App extends Component {
       email : '' ,
       phone_no : '',
       address:'',
+      bus_plate_no:'',
+      bus_product_name:'',
       //profile_pix:['.jpg','.png', '.gif','.jpeg','.svg']
       
       
@@ -51,12 +53,14 @@ handleSubmit(event){
         phone_no :this.state.phone_no,
         email : this.state.email,
         address:this.state.address,
+        bus_plate_no:this.state.bus_plate_no,
+        bus_product_name:this.state.bus_product_name,
         //profile_pix:this.state.profile_pix
         
         
         };
         console.log(user);
-  axios.post('http://192.168.10.201/a2b_api/public/register',user,{
+  axios.post('http://Spaveline.com/a2b/register',user,{
 })
 //   .catch((error) => alert("User Already exists"))
 //   .catch((message)=>alert("Successfully Registered"))
@@ -91,7 +95,7 @@ handleSubmit(event){
             <img src={a2b} alt="logo" /><h3 style={{  color:'rgb(255,255,255)' }}>Registration</h3>
             <div className="form-group">
                 <div className="col-sm-2 icona">
-                    <Icon  style={{ fontSize: 34, color:'rgb(55,76,199)' }}>person</Icon>
+                    <Icon  style={{ fontSize: 34, color:'rgb(55,76,199)' }}>assignment_ind</Icon>
                 </div>
                 <div className="col-sm-10">
                     <input type="first_name" name="first_name" onChange={this.handleChange} className="form-control" id="exampleInputEmail1" placeholder="FirstName" required />
@@ -130,6 +134,23 @@ handleSubmit(event){
                 </div>
                 <div className="col-sm-10">
                     <input type="address" name="address" onChange={this.handleChange} className="form-control" id="exampleInputEmail1" placeholder="Address" required />
+                </div>
+            </div>
+            
+            <div className="form-group">
+                <div className="col-sm-2 icona">
+                    <Icon  style={{ fontSize: 34, color:'rgb(55,76,199)' }}>web_asset</Icon>
+                </div>
+                <div className="col-sm-10">
+                    <input type="bus_plate_no" name="bus_plate_no" onChange={this.handleChange} className="form-control" id="exampleInputEmail1" placeholder="Bus Plate No" required />
+                </div>
+            </div>
+            <div className="form-group">
+                <div className="col-sm-2 icona">
+                    <Icon  style={{ fontSize: 34, color:'rgb(55,76,199)' }}>call_to_action</Icon>
+                </div>
+                <div className="col-sm-10">
+                    <input type="bus_product_name" name="bus_product_name" onChange={this.handleChange} className="form-control" id="exampleInputEmail1" placeholder="Bus Product Name" required />
                 </div>
             </div>
             
