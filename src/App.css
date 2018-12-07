@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.but_sub{
+  border-radius:5px;
+  width:80px;
+  background-color:#fff;
+
+}
+.form-horizontal{
+  background-color:rgba(255,255,255, 0.25);
+  display: flex;
+  border-radius:20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:20%;
+  margin: 10% auto;
+  padding:2%;
+}
+/* ::placeholder{
+  color:#fff;
+} */
+.form-group{
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.fa{
+  font-size:34px;
+  color:#232323;
+}
+.col-sm-10{
+  width:calc(100% - 34px);
+}
+.icona{
+  display:block;
+  width:34px;
+  height:34px;
+  padding:6px;
+  background-color:#fff;
+  background-image:none;
+  border:1px solid rgb(55,76,199);
+  border-radius:4px;
+  -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+ .form-control{
+  display:block;
+  width:calc(100% - 34px);
+  height:34px;
+  padding:6px 12px;
+  font-size:14px;
+  line-height:1.42857143;
+  color:#555;
+  background-color:#fff;
+  background-image:none;
+  border:1px solid rgb(55,76,199);
+  border-radius:4px;
+  -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+input:focus{
+  outline:0px!important;
+  -webkit-appearance: none!important;
+  border-color:transparent!important;
+  box-shadow:none!important;
+  background-color:rgba(55,76,199, 0.3);
+}
+input{
+  
+  box-shadow:none!important;
+}
+.butt{
+  width:80px;
+  margin:auto;
+}
