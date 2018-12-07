@@ -23,6 +23,9 @@
   background-color:#fff;
 
 }
+.logoo{
+  padding-top:100px;
+}
 .form-horizontal{
   background-color:rgba(0,255,255, 0.25);
   display: flex;
@@ -40,6 +43,7 @@
 /* ::placeholder{
   color:#fff;
 } */
+
 .form-group{
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -93,6 +97,7 @@ input:focus{
   border-color:transparent!important;
   box-shadow:none!important;
   background-color:rgba(55,76,199, 0.3);
+  color:#fff;
 }
 input{
   

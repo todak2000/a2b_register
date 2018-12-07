@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
+import logo from '../src/img/logo.png';
 import './App.css';
 import axios from 'axios';
 // import FontAwesomeIcon from '@fortawesome/react-fontawesome';
@@ -178,6 +178,7 @@ handleSubmit(event){
                 </div>
             </div>
         </form>
+        <div style={{ fontSize: 17, color:'#000', position:'fixed',bottom:'0',width:'100%', left:'2%', textAlign:'center' }}> <p>Powered by</p><img src={logo} alt="logo" /></div>
 </div>
     );
   }
